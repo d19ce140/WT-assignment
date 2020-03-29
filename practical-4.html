@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>practical-4 </title>
+        <style>
+           html,body
+            {
+                width:"100%";
+                height:"100%";
+                font-family:'Times New Roman', Times, serif ;
+                color: black;
+                background-image: url(https://wallpapercave.com/wp/wp3114890.jpg);
+            }
+            #cont 
+            {
+                position: fixed;
+                width: 340px;
+                height: 475px;
+                top: 30%;
+                left: 50%;
+                margin-top: -140px;
+                margin-left: -170px;
+                background:white;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border: 1px solid black;
+                background-image: url(https://c7.uihere.com/files/662/537/315/playerunknown-s-battlegrounds-dark-souls%E2%84%A2-remastered-video-game-ascent-infinite-realm-download-pubg-logo.jpg);
+                background-position: 0%;
+            }
+            form 
+            {
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            label 
+            {
+                color: rgb(10, 10, 10);
+                display: inline-block;
+                margin-left: 18px;
+                padding-top: 10px;
+                font-size: 14px;
+            }
+            p a 
+            {
+                font-size: 14px;
+                color: black;
+                float: right;
+                margin-top: -13px;
+                margin-right: 20px;
+            }
+            input 
+            {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 12px;
+                outline: none;
+            }
+            input[type=text],
+            input[type=password] 
+            {
+                color:black;
+                padding-left: 10px;
+                margin: 10px;
+                margin-top: 12px;
+                margin-left: 18px;
+                width: 290px;
+                height: 35px;
+                border: 1px solid black;
+                border-radius: 2px;
+                
+            }
+            input[type=text]:hover,
+            input[type=password]:hover 
+            {
+                border: 1px solid #b6bfc0;
+            }
+            input[type=text]:focus,
+            input[type=password]:focus 
+            {
+                border: 1px solid #a8c9e4;
+            }
+            #down 
+            {
+                background: white;
+                width: 100%;
+                height: 100px;
+                margin-top: 67px;
+                border-bottom: 1px solid black;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                
+            }
+            input[type=radio] 
+            {
+                margin-left: 50px;
+                margin-top: 10px;
+                border-color: black;
+            }
+            input[type=checkbox] 
+            {
+                margin-left: 30px;
+                margin-top: 40px;
+                border-color: black;
+            }
+            .check 
+            {
+                margin-left: 3px;
+                font-size: 14px;
+                color: black;
+            }   
+            input[type=button] 
+            {
+                float: right;
+                margin-right: 20px;
+                margin-top: 30px;
+                width: 90px;
+                height: 40px;
+                font-size: 14px;
+                font-weight: bold;
+                color:black;
+                
+                border: 1px solid black;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+	        function blr()
+	        {
+		        alert("Input field just lost the focus");
+	        }
+	    </script>
+    </head>
+    <body>
+        <center><h2>Register for pubg tournament</h2></center>
+        <div id="cont">
+            <form>
+                <b><label for="username">Name:</label></b>
+                <input type="text" id="Name" name="Name" onblur="blr()">
+                <b><label for="password">Email:</label></b>
+                <input type="text" name="text" required onblur="blr()">
+                <b><label for="password">Password:</label></b>
+                <input type="password" id="password" name="password" onblur="blr()">
+                <b><label for="password">Confirm Password:</label></b>
+                <input type="text" name="no" required onblur="blr()">
+                <b><label for="password">Gender:</label><br></b>
+                <input type="radio" id="male" name="gender" value="male">
+                <b><lable for="male">Male</lable></b>
+                <input type="radio" id="female" name="gender" value="female">
+                <b><lable for="female">Female</lable></b>
+                <div id="down">
+                    <input type="checkbox"><label class="check" for="checkbox">Remember Me</label>
+                    <input type="button" value="Register">
+                </div>
+            </form>
+        </div>
+    </body>
+    
+</html>
